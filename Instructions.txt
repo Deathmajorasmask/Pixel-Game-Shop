@@ -1,0 +1,31 @@
+***Usuario / Password ***
+**Admin**
+Deathlink
+Password
+
+**Usuario**
+Zajim
+Password
+
+Programa desarrollado en Netbeans IDE 11.1
+
+Activar el uso de Plugins 8.2 desde Tools > Plugins > Setting sino agregarlo desde http://updates.netbeans.org/netbeans/updates/8.2/uc/final/distribution/catalog.xml.gz
+
+Pestaña de Available Plugins > Check for Newest > Buscar Java Web > Activar e instalar
+
+***Agregar el conector***
+Click Derecho sobre el proyecto y resolver problemas del conector, agregarlo de la carpeta Connector J8.0 exactamente el mysql-connector-java-8.0.18.jar
+
+***Creación de Servidor TomCat***
+Ir a Tools > Server > Apache TomCat > Seleccionarlo de la carpeta apache-tomcat-9.0.27 sino se encuentra descargar la carpeta de https://tomcat.apache.org/download-90.cgi > Nos pedira Usuario y Contraseña, sino recordamos alguna marcar en crear uno nuevo si no existe previamente.
+
+Si marca un error ir a la carpeta de las conexiones en el panel de Services y dar Conect al jdbc:mysql 
+
+***Nota***
+Podria marcar error con las horas administradas por el servidor, esto se arregla con el Query en la base de datos, a continuación la sentencia que podria solucionarlo:
+SET GLOBAL time_zone = '+3:00';
+
+***Creación de la BD***
+Utilizar los scripts dados por el archivo .sql encontrados en la carpeta BD
+
+
